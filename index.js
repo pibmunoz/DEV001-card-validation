@@ -12,18 +12,12 @@ document.getElementById("hiding-button").addEventListener("click", () => {
       }
 });
 
-// Invocar isValid con el click en submit
+// Invocar isValid con el click en submit + alert con maskify
 document.getElementById("submit").addEventListener("click", function() {
   let creditCardNumber = document.getElementById("card-numbers").value;
   if (validator.isValid(creditCardNumber)) {
-     return alert("VALID!");
+    return alert("¡PAGO REALIZADO CON ÉXITO! CON TARJETA N° " + validator.maskify(creditCardNumber));
   } else {
-    return alert("INVALID!");
+    return alert("INGRESA UN NÚMERO DE TARJETA VÁLIDO")
   }
-});
-// Invocar maskify apretando una tecla
-document.getElementById("card-numbers").addEventListener("keyup", function() {
-  let creditCardInput = document.getElementById("card-numbers");
-  let creditCardNumber = document.getElementById("card-numbers").value;
-  return creditCardInput.value = validator.maskify(creditCardNumber);
-})
+  });

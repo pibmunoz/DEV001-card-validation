@@ -42,8 +42,8 @@ const validator = {
       return false;
     }
   },
-   maskify: function(creditCardNumber) {
-    if (creditCardNumber.length < 5) {
+  maskify: function(creditCardNumber) {
+    if (creditCardNumber.length <= 5) {
       return "#".repeat(creditCardNumber.length - 1) + creditCardNumber.slice(-4);
     } else if (creditCardNumber.length > 5) {
       return "#".repeat(creditCardNumber.length - 4) + creditCardNumber.slice(-4);
