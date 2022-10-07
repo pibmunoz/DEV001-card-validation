@@ -2,13 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>SkinScared - Pago en línea</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div id="container">
+      <header>Proyecto: Card-Validation</header>
+      <a href="index.html"><img class="logo" src="img\logo.svg"></a>
+      <section id="all-card">
+        <div id="cart">
+          <div id="shopping-cart">
+            <a id="hiding-button" href="#"><img src="img\bag.png">Resumen de compra (5 artículos) <span>$32.699</span></a>
+          </div>
+          <div id="products-cart">
+            <p><img src="img\balloons.png"> Pack Mascarillas Faciales Halloween<span> $2.490</span></p>
+            <p><img src="img\witch.png"> Mascarilla de Arcilla<span> $3.990</span></p>
+            <p><img src="img\voodoo.png"> Sesión Acupuntura<span> $15.990</span></p>
+            <p><img src="img\zombie.png"> Crema Facial - Piel Apagada<span> $2.539</span></p>
+            <p><img src="img\calendar.png"> Calendario Adviento Halloween<span> $7.690</span></p>
+            <h4>Subtotal <span> $27.478</span></h4>
+            <h4>I.V.A <span>$5.221</span></h4>
+            <h3>Total a pagar <span> $32.699</span></h3>
+          </div>
+        </div>
+        <main>
+          <div id="card-info">
+            <form id="form">
+              <label>Números de tu tarjeta<br><input type="text" name="card-numbers" id="card-numbers" placeholder="xxxx xxxx xxxx xxxx" required></label>              
+              <label>Nombres y Apellidos<br><input type="text" name="card-holder" id="card-holder" placeholder="Como aparece en la tarjeta"></label><br>
+              <label>Expiración<br><input type="text" name="card-date" id="card-date" maxlength="4" size="4" pattern="[0-9]{4}" placeholder="Mes/Año"></label>
+              <label>Código<br><input type="text" name="card-cvv" id="card-cvv" maxlength="3" size="3" pattern="[0-9]{3}" placeholder="CVV"></label><br>
+              <input id="submit" type="submit" value="¡Pagar!">
+            </form>
+          </div>
+        </main>
+      </section>
+      <footer>
+        <p id="credits">Desarrollado con &#129505 por <span class="Pib">Pilar Muñoz</span> para Laboratoria #DEV-001</p>
+        <a href="credits-resources.html" id="resources-credits">Créditos recursos utilizados</a>
+      </footer>
+    </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>

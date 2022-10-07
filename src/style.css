@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto&display=swap');
+:root {
+    --black: #000000;
+    --lavender-web: #e3dcf2ff;
+    --deep-saffron:  #f29441ff;
+    --persian-pink:  #f686bdff;
+    --medium-slate-blue: #8c52ffff;
+    --white: #FFFFFF;
+    --very-dark-red: #625f5f;
+    --medium-pink: #d88db1;
+    --title-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+::selection {
+    background-color: var(--persian-pink);
+    color: var(--black);
+}
+
+body {
+    background-color: var(--black);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Section all-card */
+#all-card {
+    background-color: var(--very-dark-red);
+    padding: .2rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    width: 35rem;
+}
+/* Div cart */
+#cart {
+    background-color: #f686bdff;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: var(--black) solid 1px;
+    font-family: var(--body-font);
+    font-size: 1.3rem;
+}
+
+#hiding-button {
+    display: flex;
+    align-items: baseline;
+    padding: .2rem;
+}
+
+#hiding-button span {
+    margin-left: 5rem;
+}
+
+
+#shopping-cart img {
+    height: 3.2rem;
+    width: auto;
+}
+#shopping-cart a {
+    color: var(--black);
+}
+
+/* Div products-cart*/
+#products-cart {
+    display: none;
+    text-decoration: none;
+    background-color: var(--medium-pink);
+    border: var(--black) solid 1px;
+    padding: .5rem;
+}
+#products-cart img {
+    height: auto;
+    width: 3.2rem;
+}
+
+#products-cart p {
+    border-bottom: var(--black) solid 1px;
+
+}
+#products-cart p span {
+    display: flex;
+    justify-content: flex-end;
+    align-content:space-around;
+}
+
+h3, h4 {
+    display: flex;
+    justify-content: end;
+    column-gap: 2rem;
+}
+
+h3 {
+    border-bottom: var(--black) solid 1px;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Div card-info */
+#card-info {
+    text-align: justify;
+    color: var(--white);
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+}
+
+/* Form */
+#form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    column-gap: .5rem;
+    justify-content: center;
+    text-justify:initial;
+}
+
+#card-numbers, #card-holder {
+    width: 20rem;
+}
+
+#card-date, #card-cvv {
+    justify-content: center;
+    width: 9.3rem;
+}
+
+input {
+    width: auto;
+    border-radius: .5rem;
+    height: 2rem;
+    padding: .3rem;
+    border: var(--black) solid 1.5px;
+    font-size: 1.5rem;
+    margin: .1rem;
+}
+#submit {
+    width: 20rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 1rem;
+    border: var(--persian-pink) solid .1rem;
+}
+#submit:hover {
+    background-color: var(--medium-pink);
+    border: var(--black) solid 1px;
+}
+
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    align-items:center;
+    justify-items: center;
+    flex-direction: column;
+    background-color: var(--black);
+}
+#resources-credits {
+    color: var(--black);
+    border-radius: 2px;
+    background-color: var(--medium-pink);
+    padding: .2rem;
+}
+#resources-credits:hover {
+    background-color: var(--deep-saffron);
+}
+
+a:visited {
+    color: var(--black);
+}
+.Pib {
+    font-weight: bold;
+}
+/* Credits-resources.html*/
+#credits-box {
+    background-color: var(--persian-pink);
+    width: 30rem;
+    height: 20rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: var(--deep-saffron) solid .5rem ;
+}
+
+#credits-box h1 {
+    font-family: var(--body-font);
+    font-weight: bold;
+    border-bottom: var(--black) solid 1rem;
+    text-align: center;
+}
+#credits-box p {
+    text-align: center;
+    font-style: italic;
+}
+
+#credits-box a {
+    text-decoration:none;
+    font-size: 1.5rem;
+    border-bottom: var(--very-dark-red) solid .5rem;
+    color: var(--black);
+    font-weight: bold;
+}
